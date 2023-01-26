@@ -24,14 +24,18 @@
       width: fit-content;
 
     }
-#display{
-  margin-bottom: 5px;
+    #display{
+    margin-bottom: 5px;
+    width: auto;
     font-size: 30px;
+    text-align: center;
     font-family: monospace;
-    color: #272AB0;
-}
+    color: red;
+    background-color:white;
+    border: 1px solid gray;
+    }
     .section input {
-      font-size: 8px;
+        font-size: 8px;
         color: #2D2D32;
         text-align: center;
         border: 1px solid gray;
@@ -48,18 +52,13 @@
 
         .buttons button {
             margin-right: 4px;
-
             padding: 5px 10px;
-
             background-color: #d8d8d8;
             border: none;
-
             color: white;
             font-size: 15px;
-
             cursor: pointer;
             outline: none;
-
             transition: 0.1s;
         }
 
@@ -85,11 +84,9 @@
 <body>
   <section class="section">
     <div id="display">0:00</div>
-  
     <div class="buttons">
       <input type="text" id="input" name="input" placeholder="minutes">
       <input type="text" id="input2" name="input2" placeholder="seconds">
-
       <button onclick="start()">▶</button>
       <button onclick="cancel()">∎</button>
     </div>
